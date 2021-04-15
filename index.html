@@ -1,0 +1,49 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./controller/controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Pedro Junior</title>
+</head>
+
+<body>
+
+    <header class="header"> 
+        <h3>Registro de horarios</h3>
+    </header>
+
+    <div class="container">
+
+        <section class="entrys">
+            <form>
+                <input type="text" id="nameid" placeholder="Nome..." required>
+                <input type="time" id="entryid" placeholder="Horario de entrada..." required>
+                <input type="time" id="exitid" placeholder="Horario de saida..." required>
+                <input type="button" id="registry-btn" value="Registrar" onclick="addTable()">
+            </form>
+        </section>
+    
+            <table class="table-content" id="tableid">
+                <thead>
+                    <h2 class="thead-title">Registros</h2>
+                    <hr class="thead-line"/>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Entrada</th>
+                        <th>Saida</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+           </table>
+    
+        </section>
+    
+    </div>
+    
+</body>
+</html>
